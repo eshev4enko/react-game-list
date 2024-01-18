@@ -1,3 +1,5 @@
+import FilterableGameList from "./components/FilterableGameList/FilterableGameList";
+
 const GAMES = [
   {
     category: "Хорроры", 
@@ -25,14 +27,14 @@ const GAMES = [
     price: "$50", 
     inWishList: true, 
     name: "Grand theft auto V",
-    images: ['https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1678296348', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrk3OGuWix5cqDqgMoE8EXbAG6R3JCDCUwZQ&usqp=CAU', 'https://testingbuddies.de/wp-content/uploads/2022/04/GTAV_Gen9_005.jpg']
+    images: ['https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1678296348', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrk3OGuWix5cqDqgMoE8EXbAG6R3JCDCUwZQ&usqp=CAU', 'https://backend.testingbuddies.de/uploads/gtav_gen9_010_73d01071ab.jpeg']
   },
 ];
 
 const App = () => {
   return (
     <>
-      <h1>Filterable Game List</h1>
+      <FilterableGameList games={ GAMES } />
     </>
   );
 };
